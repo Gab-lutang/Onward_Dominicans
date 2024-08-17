@@ -12,7 +12,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #FFCC00;
+  --primary: #af1436;
   --secondary: #31404B;
   --success: #28a745;
   --info: #17a2b8;
@@ -137,6 +137,13 @@ sup {
   vertical-align: baseline;
 }
 
+.od-position-relative {
+  position: relative;
+  border: 4px solid #fff; /* White solid border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  overflow: hidden; /* Ensure the border doesn't affect the layout */
+}
+
 sub {
   bottom: -.25em;
 }
@@ -259,7 +266,9 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  /*-webkit-appearance: button;*/
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 button:not(:disabled),
@@ -324,7 +333,9 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
+  /*-webkit-appearance: none;*/
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -3478,7 +3489,10 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  /*color-adjust: exact;*/
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-scheme: light dark;
 }
 
 .custom-control-inline {
