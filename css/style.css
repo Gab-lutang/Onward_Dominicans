@@ -139,9 +139,16 @@ sup {
 
 .od-position-relative {
   position: relative;
-  border: 4px solid #fff; /* White solid border */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  overflow: hidden; /* Ensure the border doesn't affect the layout */
+  border: 4px solid #fff; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.od-position-relative-dark {
+  position: relative;
+  border: 4px solid #000000; 
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 sub {
