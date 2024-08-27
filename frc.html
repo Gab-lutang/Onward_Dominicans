@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Onward Dominicans</title>
+    <link rel="icon" href="img/LOGO OFFICIAL.png" type="image/png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="onwarddominicansop" name="keywords">
+    <meta content="onwarddominicansop" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -95,17 +96,19 @@
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="frc.html" class="dropdown-item active">FRC</a>
                             <a href="events.html" class="dropdown-item">Events</a>
+                            <a href="news.html" class="dropdown-item">News</a>
                         </div>
                     </div>
-                    <a href="single.html" class="nav-item nav-link">Single News</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
-                    <input type="text" class="form-control border-0" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
-                                class="fa fa-search"></i></button>
-                    </div>
+                <div class="container">
+                    <form action="/search" method="GET" class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                        <input type="text" class="form-control border-0" name="query" placeholder="Keyword">
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text bg-primary text-dark border-0 px-3"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="results"></div>
                 </div>
                 <a href="about.html" class="nav-item nav-link active">About</a>
             </div>
@@ -127,221 +130,345 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-1.jpg" style="object-fit: cover;">
-                                <div class="bg-white border border-top-0 p-4">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                    <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                        rebum clita rebum dolor stet amet justo</p>
-                                </div>
-                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                        <small>John Doe</small>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
-                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-2.jpg" style="object-fit: cover;">
-                                <div class="bg-white border border-top-0 p-4">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                    <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                        rebum clita rebum dolor stet amet justo</p>
-                                </div>
-                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                        <small>John Doe</small>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
-                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mb-3">
-                            <a href=""><img class="img-fluid w-100" src="img/ads-728x90.png" alt=""></a>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-3.jpg" style="object-fit: cover;">
-                                <div class="bg-white border border-top-0 p-4">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                </div>
-                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                        <small>John Doe</small>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
-                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-4.jpg" style="object-fit: cover;">
-                                <div class="bg-white border border-top-0 p-4">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                </div>
-                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                        <small>John Doe</small>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
-                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-3.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mb-3">
-                            <a href=""><img class="img-fluid w-100" src="" alt=""></a>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="row news-lg mx-0 mb-3">
-                                <div class="col-md-6 h-100 px-0">
-                                    <img class="img-fluid h-100" src="img/news-700x435-5.jpg" style="object-fit: cover;">
-                                </div>
-                                <div class="col-md-6 d-flex flex-column border bg-white h-100 px-0">
-                                    <div class="mt-auto p-4">
-                                        <div class="mb-2">
-                                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                                href="">Business</a>
-                                            <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                            <div class="od-position-relative-dark mb-3">
+                                <div class="container-fluid" style="width: 450px; height: 300px; overflow: hidden;">
+                                    <div class="row" style="width: 100%; height: 100%;">
+                                        <div class="owl-carousel news-carousel carousel-item-1 od-position-relative" style="width: 100%; height: 100%;">
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/kura.webp" style="object-fit: scale-down; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/kura2.webp" style="object-fit: cover; width: 100%; height: 100%;">
+                                            </div>
                                         </div>
-                                        <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
-                                        <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                            rebum clita rebum dolor stet amet justo</p>
                                     </div>
-                                    <div class="d-flex justify-content-between bg-white border-top mt-auto p-4">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
-                                            <small>John Doe</small>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
-                                            <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
+                                </div>                                
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 22, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="frdars.html">Jesus’s unconditional love remains Dominicans told as 29th FRC closes</h2></a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Alaysa San Pedro and Rochelle Domingo, OD Staffers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <div class="container-fluid" style="width: 500px; height: 300px; overflow: hidden;">
+                                    <div class="row" style="width: 100%; height: 100%;">
+                                        <div class="owl-carousel news-carousel carousel-item-1 od-position-relative" style="width: 100%; height: 100%;">
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/frdagohoy.webp" style="object-fit: scale-down; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/frdagohoy2.webp" style="object-fit: cover; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/frdagohoy3.webp" style="object-fit: cover; width: 500px; height: 300px; object-position: center;">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                
+                                <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="frdagohoy.html">Fr. Dagohoy to Dominican Faithful: "Prioritizing God lead us towards right path"</h2></a>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Majan Trishia Aragon and Chezka Nicole Mendoza</small>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-3.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frlindo.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 03, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frlindo.html">Fr. Lindo, FAM on the Essence of Family: Church starts in faithfuls’ Families</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Angela Mae L. Claveron and Tristan James San Diego, Science Writers</small>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
-                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frramos.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 22, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frramos.html">Rev. Fr. Ramos recounts Faithful’s devotion to Holy Rosary on FRC’s day 7</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Ruth Marie Flores, OD Staffer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frbuluran.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 22, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frbuluran.html">Rev. Fr. Buluran reminds every Dominican: "Everyone has a guardian angel”</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Ruth Marie Flores, OD Staffer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frbrion.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frbrion.html">Fr. Brion Jr. encourages Dominicans to realize their talk, do what they preach on...</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Brien Jacob Tiongson, Ruth Marie Flores, and Mhaverick Elizaga, OD Staffers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/franastacio.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="franastacio.html">Fr. Anastacio calls on Dominicans: Be a Messenger of Good News</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Gian Geronimo, Associate Editor, and Arrianne Kyle Fernando, Editorial Writer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frcaleon.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 03, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frcaleon.html">Fr. Caleon to Dominicans: The family that prays together, stays forever</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Alexandra Reyes, Feature Editor and Miel Kristina Verona, Feature Writer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frcabral.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Sep 30, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frcabral.html">“Speak the language of the joy of love” Fr. Cabral tells Dominican faithful as FRC begins</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Jean Soliman, News Editor and Keith Ashley Castro, Junior Staffer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/29thfrcinv.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Sep 30, 2023</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="29thfrcinv.html">SDA'S 29th Family Rosary Crusade</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frcabral28th.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frcabral28th.html">Rosary helps faithful encounter Christ Fr. Cabral says as 28th FRC ends</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Paul Marquis Garcia, OD Staffer, and Mel Christian Verona, OD President</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frsipalay.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 07, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frsipalay.html">Prayer comes from heart, Fr. Sipalay, Jr. O.P. imparts as FRC nears end</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Janna Guieb, VP for Recruitment and Retention, and Vinh Marco Tumang, OD Editor-in-Chief</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frnapoleon.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 06, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frnapoleon.html">FRC Day 8: Same with St. Faustina's life, hope never perish even in difficult situations</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Gracela Yao and Jean Carmela Soliman, OD Junior Staffers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frdagohoy2022.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 06, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frdagohoy2022_1.html">Fr. Dagohoy to Dominicans: Listening is an act of affection, love</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>David James Vargas and Dianne Fajutagana, OD Junior Staffers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frmalijan.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 04, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frmalijan.html">Fr. Malijan, O.P. emphasizes faithful's "helping hand" on FRC’s 6th day</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Clarence Anthony Jason Pineda and Marisol Castro, OD Senior Staffers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frpercival.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 03, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frpercival.html">FRC Day 5: Increase your faith, Fr. Tayem tells Dominicans</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Stephen Carl Esguerra and Julliana Rojimherie Jornal, OD Senior Staffers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="od-position-relative-dark mb-3">
+                                <img class="img-fluid w-100" src="img/frpascual.webp" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 7, 2022</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="frpascual.html">Rev Fr. Pascual: Praying the Rosary is a hotline to God</a>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Rhyza Noreen Santos and Bea Valenzuela</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -384,8 +511,22 @@
                         <div class="section-title mb-0">
                             <h4 class="m-0 text-uppercase font-weight-bold">Advertisement</h4>
                         </div>
-                        <div class="bg-white text-center border border-top-0 p-3">
-                            <a href="https://sdasite.orangeapps.ph/"><img class="img-fluid" src="img/sda.png" alt=""></a>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="owl-carousel news-carousel carousel-item-1 od-position-relative">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href="https://sdasite.orangeapps.ph/">
+                                            <img class="img-fluid" src="img/sda.png" style="object-fit: cover;">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="position-relative overflow-hidden">
+                                        <a href="recruitform.html">
+                                            <img class="img-fluid" src="img/logo1.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Ads End -->
@@ -403,7 +544,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="events.html">Events</a>
                                         <a class="text-body" href=""><small>Nov 16, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">SDA's AP club wraps up UN Month...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="un.html">SDA's AP club wraps up UN Month...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -413,7 +554,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
                                         <a class="text-body" href=""><small>Oct 10, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Jesus’s unconditional love...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frdars.html">Jesus’s unconditional love...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -423,7 +564,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
                                         <a class="text-body" href=""><small>Oct 10, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Fr. Dagohoy to Dominican Faithful...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frdagohoy.html">Fr. Dagohoy to Dominican Faithful...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -433,7 +574,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
                                         <a class="text-body" href=""><small>Oct 10, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Rev. Fr. Ramos recounts...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frramos.html">Rev. Fr. Ramos recounts...</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
@@ -443,7 +584,7 @@
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
                                         <a class="text-body" href=""><small>Oct 10, 2023</small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Rev. Fr. Buluran reminds every Dominican...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frbuluran.html">Rev. Fr. Buluran reminds every Dominican...</a>
                                 </div>
                             </div>
                         </div>
@@ -456,14 +597,14 @@
                             <h4 class="m-0 text-uppercase font-weight-bold">Newsletter</h4>
                         </div>
                         <div class="bg-white text-center border border-top-0 p-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                            <p></p>
                             <div class="input-group mb-2" style="width: 100%;">
                                 <input type="text" class="form-control form-control-lg" placeholder="Your Email">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
                                 </div>
                             </div>
-                            <small>Lorem ipsum dolor sit amet elit</small>
+                            <small></small>
                         </div>
                     </div>
                     <!-- Newsletter End -->
@@ -477,6 +618,7 @@
                             <div class="d-flex flex-wrap m-n1">
                                 <a href="frc.html" class="btn btn-sm btn-outline-secondary m-1">FRC</a>
                                 <a href="events.html" class="btn btn-sm btn-outline-secondary m-1">Events</a>
+                                <a href="news.html" class="btn btn-sm btn-outline-secondary m-1">News</a>
                             </div>
                         </div>
                     </div>
@@ -532,40 +674,57 @@
                 <div class="m-n1">
                     <a href="frc.html" class="btn btn-sm btn-secondary m-1">FRC</a>
                     <a href="events.html" class="btn btn-sm btn-secondary m-1">Events</a>
+                    <a href="news.html" class="btn btn-sm btn-secondary m-1">News</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">OD Photos</h5>
-                <div class="row">
-                    <div class="col-4 mb-3">
-                        <a href=""><img class="w-101" src="img/OD1.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <a>``````</a>
-                    </div>
-                    <div class="col-4 mb-3">
-                        <a href=""><img class="w-101" src="img/OD2.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 mb-3">
-                        <a href=""><img class="w-101" src="img/OD3.jpg" alt=""></a>
-                    </div>
-                    <div><a>``````</a></div>
-                    <div class="col-4 mb-3">
-                        <a href=""><img class="w-101" src="img/OD4.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 mb-3">
-                        <a href=""><img class="w-101" src="img/OD5.jpg" alt=""></a>
-                    </div>
-                    <div><a>``````</a></div>
-                    <div class="col-4 mb-3">
-                        <a href=""><img class="w-101" src="img/OD6.jpg" alt=""></a>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="owl-carousel news-carousel carousel-item-1 od-position-relative">
+                                <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/OD1.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/OD2.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD3.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD4.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD5.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD6.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD7.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD8.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD9.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD10.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD11.jpg" style="object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
-        <p class="m-0 text-center">&copy; <a>by </a><a href="#">Onward Dominicans</a>. All Rights Reserved. 
+        <p class="m-0 text-center">&copy; <a>by </a><a href="https://github.com/Gab-lutang">Steven Gabriel T. Garcia</a>. All Rights Reserved. 
 		<a href="https://htmlcodex.com"></a></p>
     </div>
     <!-- Footer End -->

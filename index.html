@@ -102,12 +102,14 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
-                    <input type="text" class="form-control border-0" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
-                                class="fa fa-search"></i></button>
-                    </div>
+                <div class="container">
+                    <form action="/search" method="GET" class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                        <input type="text" class="form-control border-0" name="query" placeholder="Keyword">
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text bg-primary text-dark border-0 px-3"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="results"></div>
                 </div>
                 <a href="about.html" class="nav-item nav-link active">About</a>
             </div>
@@ -246,6 +248,17 @@
             </div>
             <div class="owl-carousel news-carousel carousel-item-4 position-relative">
                 <div class="position-relative overflow-hidden" style="height: 300px;">
+                    <img class="img-fluid h-100" src="img/parents-meeting.jpg" style="object-fit: cover;">
+                    <div class="overlay">
+                        <div class="mb-2">
+                            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                href="news.html">News</a>
+                            <a class="text-white" href=""><small>Aug 18, 2024</small></a>
+                        </div>
+                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="parents-meeting.html">Oryentasyon ng mga Magulang at Unang Asembleya.</a>
+                    </div>
+                </div>
+                <div class="position-relative overflow-hidden" style="height: 300px;">
                     <img class="img-fluid h-100" src="img/ap.webp" style="object-fit: cover;">
                     <div class="overlay">
                         <div class="mb-2">
@@ -320,6 +333,30 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="img/parents-meeting.jpg" style="object-fit: cover;">
+                                <div class="bg-white border border-top-0 p-4">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                            href="news.html">News</a>
+                                        <a class="text-body" href=""><small>Aug 18, 2024</small></a>
+                                    </div>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="parents-meeting.html">Oryentasyon ng mga Magulang at Unang Asembleya.</a>
+                                    <p class="m-0">𝗣𝗔𝗚𝗣𝗔𝗣𝗔𝗟𝗔𝗞𝗔𝗦 𝗡𝗚 𝗞𝗢𝗟𝗔𝗕𝗢𝗥𝗔𝗦𝗬𝗢𝗡. Kinikilala ang mahalagang papel ng mga magulang sa kabuuang paghubog ng mga mag-aaral, nagsagawa ang St. Dominic Academy of Pulilan, Inc. ng oryentasyon ng mga magulang at unang asembleya nitong Sabado, Agosto 17.</p>
+                                </div>
+                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                        <small>Jeric Tristan Regala and Sophia Grace M. Ramos, OD Staffers</small>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>46</small>
+                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>0</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
                                 <img class="img-fluid w-100" src="img/ap.webp" style="object-fit: cover;">
                                 <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
@@ -366,9 +403,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 mb-3">
-                            <a href=""><img class="img-fluid w-100" src="img/" alt=""></a>
-                        </div>
                         <div class="col-lg-6">
                             <div class="position-relative mb-3">
                                 <img class="img-fluid w-100" src="img/franastacio.webp" style="object-fit: cover;">
@@ -378,7 +412,7 @@
                                             href="frc.html">FRC</a>
                                         <a class="text-body" href=""><small>Oct 04, 2023</small></a>
                                     </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Fr. Anastacio calls on Dominicans: Be a Messenger of Good News</a>
+                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="franastacio.html">Fr. Anastacio calls on Dominicans: Be a Messenger of Good News</a>
                                     <p class="m-0">SDA’s 29th Family Rosary Crusade coincides with the celebration of the feast of the Archangels: Michael, Gabriel, and Rafael with Rev. Fr. Manuel Anastacio leading the mass last Friday, September 29, 2023.  </p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
@@ -388,30 +422,6 @@
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <small class="ml-3"><i class="far fa-eye mr-2"></i>95</small>
-                                        <small class="ml-3"><i class="far fa-comment mr-2"></i>0</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/frbuluran.webp" style="object-fit: cover;">
-                                <div class="bg-white border border-top-0 p-4">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                            href="frc.html">FRC</a>
-                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
-                                    </div>
-                                    <a class="h4 d-block mb-0 text-secondary text-uppercase font-weight-bold" href="">Rev. Fr. Buluran reminds every Dominican: "Everyone has a guardian angel”</a>
-                                    <p class="m-0">On the 6th day of SDA's Family Rosary Crusade 2023, Rev. Fr. Stephen Kirth Buluran gave emphasis on the reality of angels as he presided over the mass, Monday, October 2nd, the Feast Day of Guardian Angels.  </p>
-                                </div>
-                                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
-                                        <small>Jeric Tristan Regala and Sophia Grace M. Ramos, OD Staffers</small>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <small class="ml-3"><i class="far fa-eye mr-2"></i>46</small>
                                         <small class="ml-3"><i class="far fa-comment mr-2"></i>0</small>
                                     </div>
                                 </div>
@@ -713,7 +723,7 @@
                     </div>
                     <a class="small text-body text-uppercase font-weight-medium" href="">FRC Day 5: Increase your faith, Fr. Tayem tells Dominicans</a>
                 </div>
-                <div class="">
+                <div class="mb-3">
                     <div class="mb-2">
                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
                         <a class="text-body" href=""><small>Oct 4, 2022</small></a>

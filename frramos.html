@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Onward Dominicans</title>
+    <link rel="icon" href="img/LOGO OFFICIAL.png" type="image/png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="onwarddominicansop" name="keywords">
     <meta content="onwarddominicansop" name="description">
@@ -99,12 +100,14 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
-                    <input type="text" class="form-control border-0" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="input-group-text bg-primary text-dark border-0 px-3"><i
-                                class="fa fa-search"></i></button>
-                    </div>
+                <div class="container">
+                    <form action="/search" method="GET" class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                        <input type="text" class="form-control border-0" name="query" placeholder="Keyword">
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text bg-primary text-dark border-0 px-3"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="results"></div>
                 </div>
                 <a href="about.html" class="nav-item nav-link active">About</a>
             </div>
