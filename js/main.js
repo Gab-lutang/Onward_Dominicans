@@ -161,3 +161,34 @@
     
 })(jQuery);
 
+document.querySelector('.input-group').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const query = document.querySelector('.form-control').value.toLowerCase();
+    const resultsContainer = document.querySelector('.results');
+    resultsContainer.innerHTML = '';
+
+    const articles = [
+        { id: 1, title: 'Jesus’s unconditional love remains Dominicans told as 29th FRC closes', content: 'The stock market reached new heights today...', url: 'frdars.html' },
+        { id: 2, title: 'Fr. Lindo, FAM on the Essence of Family: Church starts in faithfuls’ Families', content: 'In an exciting final match, the local team...', url: 'frlindo.html' },
+        { id: 3, title: "Maringal ma't marikit, patuloy na mapapaisip", content: 'The latest smartphone model features...', url: '.html' },
+        { id: 4, title: "SDA's AP club wraps up UN Month celebrations...", content: 'After weeks of preparation, the United Nations’ Month 2023 wrapped up...', url: 'un.html' },
+        { id: 5, title: "Fr. Anastacio calls on Dominicans: Be a Messenger of Good News", content: 'SDA’s 29th Family Rosary Crusade coincides...', url: 'franastacio.html' },
+        { id: 6, title: "Rev. Fr. Buluran reminds every Dominican...", content: 'The latest smartphone model features...', url: 'frbuluran.html' },
+    ];
+
+    const results = articles.filter(article => 
+        article.title.toLowerCase().includes(query) || 
+        article.content.toLowerCase().includes(query)
+    );
+
+    if (results.length > 0) {
+        results.forEach(article => {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+            resultItem.innerHTML = `<h3><a href="${article.url}">${article.title}</a></h3><p>${article.content}</p>`;
+            resultsContainer.appendChild(resultItem);
+        });
+    } else {
+        resultsContainer.innerHTML = '<p>No results found</p>';
+    }
+});
