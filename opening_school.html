@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+    <meta charset="utf-8">
+    <title>Onward Dominicans</title>
+    <link rel="icon" href="img/LOGO OFFICIAL.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="onwarddominicansop" name="keywords">
+    <meta content="onwarddominicansop" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Alfa Slab One -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body small" href="work_in_progress.html">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://twitter.com/OnwardOP"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.facebook.com/OnwardOP"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.instagram.com/onwarddominicansop/"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.youtube.com/c/StDominicAcademyofPulilanInc"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">Onward<span class="text-secondary font-weight-normal">Dominicans</span></h1>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Onward<span class="text-white font-weight-normal">Dominicans</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="work_in_progress.html" class="nav-item nav-link">Category</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"></a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="frc.html" class="dropdown-item active">FRC</a>
+                            <a href="events.html" class="dropdown-item">Events</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="container">
+                    <form action="/search" method="GET" class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                        <input type="text" class="form-control border-0" name="query" placeholder="Keyword">
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text bg-primary text-dark border-0 px-3"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="results"></div>
+                </div>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breaking News Start -->
+    <div class="container-fluid mt-5 mb-3 pt-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="section-title border-right-0 mb-0" style="width: 180px;">
+                            <h4 class="m-0 text-uppercase font-weight-bold">TOP STORY</h4>
+                        </div>
+                        <div class="owl-carousel tranding-carousel position-relative d-inline-flex align-items-center bg-white border border-left-0"
+                            style="width: calc(100% - 180px); padding-right: 100px;">
+                            <div class="text-truncate"><a class="text-secondary text-uppercase font-weight-semi-bold" href="">30TH ANNIVERSARRY OF FAMILY ROSARY Crusade</a></div>
+                            <div class="text-truncate"><a class="text-secondary text-uppercase font-weight-semi-bold" href="">SDA to launch SWEM Program, English Language Month on Sept. 06</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breaking News End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start -->
+                    <div class="position-relative mb-3">
+<!--                         <img class="img-fluid w-100" src="img/day3_2024/OD Quotes (Day 3).png" style="object-fit: cover;"> -->
+                        <div class="bg-white border border-top-0 p-4">
+                            <div class="mb-3">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                                    href="frc.html">FRC</a>
+                                <a class="text-body" href="oct.html">Oct 06, 2024</a>
+                            </div>
+                            <h2 class="mb-3 text-secondary text-uppercase font-weight-bold"></h2>
+                            <p class="text-dark">Relationships start with communication, whether it’s with our family, with friends, or with God. The more we communicate, the closer we become; just like how we show our loved one’s they matter by talking and spending time with them.</p>
+                            <p class="text-dark">We must also keep in touch with God through praying wholeheartedly. However, communication isn’t about just talking—this also relies on having a true connection. We feel valued when someone listens to us, and it’s the same with our relationship with God. When we deepen our connections, we develop patience and empathy, which is essential for creating stronger and more meaningful relationships.</p>
+                            <p class="text-dark">God cares deeply about our relationships all the time, especially as God created family as a gift for all. At the heart of every family is marriage, and its fruit is children—the love that holds a family together. But when one partner stops listening to God and is influenced by evil, problems often arise.
+                            </p>
+                            <p class= text-dark>Many relationships are broken because someone loses their connection with God and starts making choices that go against His will, like cheating or dishonesty. Divorce and separation are commonly known today, God never intended it. When couples listen to Him and follow His guidance—The 6th commandment states, “Do not commit adultery”—they avoid many of the struggles that lead to brokenness. A strong healthy relationship is built when both partners are honest, God listens as they work together to keep their love alive.</p>
+<!--                             <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/day3_2024/day 3.png"> -->
+                            <p class="text-dark">We should also reflect on our relationships, whether with family, friends, or a spouse. How is your relationship with God? Are you still listening to Him, or are you just praying without truly opening your heart to His voice? If we want our relationships to grow and last, we need to listen to God and ask for His guidance. When we fix our relationship with Him, everything else starts to fall into place. 
+                            </p>
+                            <p class="text-dark">“Bakit hindi pwede basta-basta maghiwalay ang mag-asawa, magkakaibigan, o magkasintahan? Sapagkat kailanman, hindi kayo iniwan ng Diyos.”<br> 
+                                (“Why can’t husbands and wives, friends, or lovers just separate? It is because God never left you.”)
+                                </p>
+                            <p class="text-dark">God never abandons us, no matter what struggles we face in our relationships. He is always there, steady and unwavering. Centering our lives around Him allows our relationships to thrive and develop, deepening our understanding of love and commitment while also helping us find strength in all our challenges.
+                            </p>
+                            <div class="od-position-relative-dark mb-3">
+                                <div class="container-fluid" style="width: 500px; height: 300px; overflow: hidden;">
+                                    <div class="row" style="width: 100%; height: 100%;">
+                                        <div class="owl-carousel news-carousel carousel-item-1 od-position-relative" style="width: 100%; height: 100%;">
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (2).png" style="object-fit: scale-down; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (3).png" style="object-fit: cover; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (4).png" style="object-fit: cover; width: 500px; height: 300px; object-position: center;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (5).png" style="object-fit: scale-down; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (6).png" style="object-fit: cover; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (7).png" style="object-fit: cover; width: 500px; height: 300px; object-position: center;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (8).png" style="object-fit: cover; width: 500px; height: 300px; object-position: center;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (9).png" style="object-fit: scale-down; width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (10).png" style="object-fit: cover; width: 500px; height: 300px; object-position: center;">
+                                            </div>
+                                            <div class="position-relative overflow-hidden" style="width: 100%; height: 100%;">
+                                                <img class="img-fluid" src="img/day9_2024/day9 (11).png" style="object-fit: scale-down; width: 100%; height: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>photos courtesy of the OD FRC Media Team</span>
+                        </div>
+                        <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle mr-2" src="img/LOGO OFFICIAL.png" width="25" height="25" alt="">
+                                <span>Sakura Take & James Carlos Flores<br> Edited by Gian Geronimo and Lorraine Fernando</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Detail End -->
+
+                    <!-- Comment List Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Comments</h4>
+                        </div>
+                    </div>
+                    <!-- Comment List End -->
+
+                    <!-- Comment Form Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Leave a comment</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-4">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="name">Name *</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="email">Email *</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="website">Website</label>
+                                    <input type="url" class="form-control" id="website">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input type="submit" value="Leave a comment"
+                                        class="btn btn-primary font-weight-semi-bold py-2 px-3">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Comment Form End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Social Follow Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Follow Us</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-3">
+                            <a href="https://www.facebook.com/OnwardOP" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
+                                <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">2.5k Likes</span>
+                            </a>
+                            <a href="https://twitter.com/OnwardOP" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
+                                <i class="fab fa-twitter text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">317 Followers</span>
+                            </a>
+                            <a href="https://www.instagram.com/onwarddominicansop/" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #C8359D;">
+                                <i class="fab fa-instagram text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">169 Followers</span>
+                            </a>
+                            <a href="https://www.youtube.com/c/StDominicAcademyofPulilanInc" class="d-block w-100 text-white text-decoration-none mb-3" style="background: #DC472E;">
+                                <i class="fab fa-youtube text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                                <span class="font-weight-medium">6.61k Subscribers</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <!-- Social Follow End -->
+
+                    <!-- Ads Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Advertisement</h4>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="owl-carousel news-carousel carousel-item-1 od-position-relative">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href="https://sdasite.orangeapps.ph/">
+                                            <img class="img-fluid" src="img/sda.png" style="object-fit: cover;">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="position-relative overflow-hidden">
+                                        <a href="recruitform.html">
+                                            <img class="img-fluid" src="img/logo1.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ads End -->
+
+                    <!-- Popular News Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Latest News</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-3">
+				<div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/day3_2024/OD Quotes (Day 3) .png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Sep 30, 2024</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="day3_2024.html">“KFC - KEEP FOCUS ON CHRIST</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/day2_2024/OD Quotes (Day 2) .png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Sep 29, 2024</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="day2_2024.html">Look out for one another, encourage more people...</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/day1_2024/OD Qoutes (DAY 1).png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Sep 28, 2024</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="day1_2024.html">Debosyon, daan tungo sa pagpapanibago at pagiging banal</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/ap.png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="events.html">Events</a>
+                                        <a class="text-body" href=""><small>Nov 16, 2023</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">SDA's AP club wraps up UN Month...</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/kura.png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frdars.html">Jesus’s unconditional love...</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/frdagohoy.png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frdagohoy.html">Fr. Dagohoy to Dominican Faithful...</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                                <img class="img-fluid" src="img/frramos.png" alt="">
+                                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                                    <div class="mb-2">
+                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                                        <a class="text-body" href=""><small>Oct 10, 2023</small></a>
+                                    </div>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="frramos.html">Rev. Fr. Ramos recounts...</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Popular News End -->
+
+                    <!-- Newsletter Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Newsletter</h4>
+                        </div>
+                        <div class="bg-white text-center border border-top-0 p-3">
+                            <p></p>
+                            <div class="input-group mb-2" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
+                                <div class="input-group-append">
+                                    <a href="work_in_progress.html">
+                                    <button class="btn btn-primary font-weight-bold px-3 h-100">Sign Up</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <small></small>
+                        </div>
+                    </div>
+                    <!-- Newsletter End -->
+
+                    <!-- Tags Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Tags</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-3">
+                            <div class="d-flex flex-wrap m-n1">
+                                <a href="frc.html" class="btn btn-sm btn-outline-secondary m-1">FRC</a>
+                                <a href="events.html" class="btn btn-sm btn-outline-secondary m-1">Events</a>
+                                <a href="news.html" class="btn btn-sm btn-outline-secondary m-1">News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tags End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="row py-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Get In Touch</h5>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>WR3X+6VC, Pulilan, 3005 Bulacan</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>odmaisu@gmail.com</p>
+                <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://twitter.com/OnwardOP"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.facebook.com/OnwardOP"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.instagram.com/onwarddominicansop/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square" href="https://www.youtube.com/c/StDominicAcademyofPulilanInc"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Popular News</h5>
+                <div class="mb-3">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                        <a class="text-body" href=""><small>Oct 2, 2022</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Rev Fr. Pascual: Praying the Rosary is a hotline to God</a>
+                </div>
+                <div class="mb-3">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                        <a class="text-body" href=""><small>Oct 3, 2022</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">FRC Day 5: Increase your faith, Fr. Tayem tells Dominicans</a>
+                </div>
+                <div class="">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="frc.html">FRC</a>
+                        <a class="text-body" href=""><small>Oct 4, 2022</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="frmalijan.html">Fr. Malijan, O.P. emphasizes faithful's "helping hand" on FRC’s 6th day</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Categories</h5>
+                <div class="m-n1">
+                    <a href="frc.html" class="btn btn-sm btn-secondary m-1">FRC</a>
+                    <a href="events.html" class="btn btn-sm btn-secondary m-1">Events</a>
+                    <a href="news.html" class="btn btn-sm btn-secondary m-1">News</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">OD Photos</h5>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="owl-carousel news-carousel carousel-item-1 od-position-relative">
+                                <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/OD1.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/OD2.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD3.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD4.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD5.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD6.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD7.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD8.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD9.jpg" style="object-fit: cover;">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD10.jpg">
+                                </div>
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid" src="img/OD11.jpg" style="object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a>by </a><a href="https://github.com/Gab-lutang">Steven Gabriel T. Garcia</a>. All Rights Reserved. 
+		<a href="https://htmlcodex.com"></a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
